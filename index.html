@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/68ac156ff5.js" crossorigin="anonymous"></script>
     <title>Forevercare</title>
 </head>
 <body>
     <header>
         <nav class="small-navbar">
             <ul>
-                <li>021 123 4566</li>
-                <li>Saltriver, Cape Town, South Africa</li>
+                <li><i class="fa-solid fa-phone"></i>021 123 4566</li>
+                <li><i class="fa-solid fa-location-dot"></i>Saltriver, Cape Town, South Africa</li>
                 <li>login | signup</li>
             </ul>
         </nav>
         <nav class="navbar">
             <h4>FOREVERCARE</h4>
             <ul>
-                <li>home</li>
-                <li>about</li>
-                <li>services</li>
-                <li>department</li>
-                <li>contact</li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#departments">department</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
             <button class="button-style">Appointment</button>
         </nav>
     </header>
     
-    <section class="hero">
+    <section class="hero" id="home">
         <article>
             <h5>FOREVERCARE</h5>
             <h1><i>Health in a Loop, <br>
@@ -37,85 +38,110 @@
             <button class="button-style">Book An Appointment</button>
         </article>
     </section>
-
-    <section class="about">
+<div class="about-container">
+    <section class="about" id="about">
         <h1 class="heading-left">ABOUT US</h1>
-        <div class="about_info-box">
             <div class="about-text">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque doloremque repellat cupiditate ducimus ex molestias nostrum corrupti, nulla sit! Lorem 
-                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque doloremque repellat cupiditate ducimus ex molestias nostrum corrupti, nulla sit! Lorem  </p>
+                <p> At ForeverCare, we are committed to providing continuous, compassionate healthcare that supports you at every stage of life. Our services are designed to ensure that your well-being is always our priority, offering a seamless loop of care that never ends. Whether it's through our dedicated maternity care, swift ambulance services, or 24/7 medical support, we are here to deliver trusted, reliable care that you can depend on, forever. Your health is our mission, and we are forever yours in care.</p>
+                <div class="button-box">        
+                    <button class="button-style">more about us</button>
+                </div>
             </div>
-            <div class="about-img">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam vel quam quas, nam porro voluptatum dignissimos suscipit veniam repellat assumenda delectus doloribus quibusdam quisquam dolorem enim sit blanditiis laboriosam maxime, pariatur consectetur ullam in repudiandae nobis culpa? Consectetur ad quia officiis porro molestias quisquam quidem dolorum nobis laboriosam molestiae? Nesciunt!
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-        </div>
-        <div class="button-box">        
-            <button class="button-style">more about us</button>
-        </div>
-
     </section>
-    <section class="services">
+    <aside>
+        <div class="about-img">
+            <!-- <img src="./media/about-img1.jpg" alt="" width="270px" class="about-img1">
+            <img src="./media/about-img2.jpg" alt="" width="270px" class="about-img2"> -->
+        </div>
+    </aside>
+</div>
+    <section class="services" id="services">
         <h1 class="heading-center">OUR SERVICES</h1>
-        <div class="services_info-box">
+        <div class="info-box">
             <div class="info-container">
+                <i class="fa-solid fa-truck-medical"></i>
                 <h5>AMBULANCE SERVICE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <p>Fast and reliable emergency transportation to get you the care you need.</p>
             </div>
             <div class="info-container">
+                <i class="fa-solid fa-person-breastfeeding"></i>
                 <h5>MATERNITY CARE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <p>Comprehensive care for mothers and babies, from pregnancy to delivery.</p>
             </div>
             <div class="info-container">
+                <i class="fa-solid fa-stethoscope"></i>
                 <h5>CHECK UP</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <p>Routine health exams to ensure your well-being and catch issues early.</p>
             </div>
             <div class="info-container">
+                <i class="fa-solid fa-clock-rotate-left"></i>
                 <h5>24hr SERVICE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <p>Around-the-clock medical support whenever you need it.</p>
             </div>
             <div class="info-container">
+                <i class="fa-solid fa-pills"></i>
                 <h5>MEDICATION COLLECTION</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <p>Convenient prescription pick-up</p>
             </div>
             <div class="info-container">
+                <i class="fa-solid fa-hospital"></i>
                 <h5>EMERGENCY CARE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <p>Immediate treatment for urgent and life-threatening conditions.</p>
             </div>
         </div>       
     </section>
-    <section class="departments">
+    <section class="departments" id="departments">
         <h1 class="heading-left">DEPARTMENTS</h1>
-        <div class="services_info-box">
+        <div class="info-box">
             <div class="info-container">
-                <h5>AMBULANCE SERVICE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <i class="fa-solid fa-user-injured"></i>
+                <h5>EMERGENCY DEPARTMENT (ED)</h5>
+                <p>Immediate care for acute illnesses and injuries.</p>
             </div>
             <div class="info-container">
-                <h5>MATERNITY CARE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <i class="fa-solid fa-star-of-life"></i>
+                <h5>CARDIOLIGY</h5>
+                <p>Diagnosis and treatment of heart and vascular conditions.</p>
             </div>
             <div class="info-container">
-                <h5>CHECK UP</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <i class="fa-solid fa-brain"></i>
+                <h5>PSYCHIATRY</h5>
+                <p>Mental health care and treatment .</p>
             </div>
             <div class="info-container">
-                <h5>24hr SERVICE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <i class="fa-solid fa-x-ray"></i>
+                <h5>RADIOOLGY</h5>
+                <p>Imaging services for diagnosis and treatment .</p>
             </div>
             <div class="info-container">
-                <h5>MEDICATION COLLECTION</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <i class="fa-solid fa-bed-pulse"></i>
+                <h5>INTENSIVE CARE UNIT (ICU)</h5>
+                <p>Critical care for severely ill or injured patients .</p>
             </div>
             <div class="info-container">
-                <h5>EMERGENCY CARE</h5>
-                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit.</p>
+                <i class="fa-solid fa-user-doctor"></i>
+                <h5>PHYSIO & REHAB</h5>
+                <p>Rehabilitation and physical therapy services .</p>
             </div>
         </div>       
     </section>
-    <section class="contact">
-        <h1>CONTACT</h1>
+    <section class="contact" id="contact">
+        <h1 class="heading-center">CONTACT</h1>
+        <div class="contact-box">
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.3017348887875!2d18.45808437501857!3d-33.933366722404706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5db42c93a685%3A0xec815c21c6eaef71!2sCapaCiTi%20Tech%20Career%20Accelerator!5e0!3m2!1sen!2sza!4v1724001290503!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+                <form action="">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="8" placeholder="Message"></textarea>
+                    <button class="button-style">Send Message</button>
+                </form>
+        </div>
     </section>
+    <footer>
+        <p class="footer-text">© 2024 ForeverCare. All rights reserved.</p>
+    </footer>
 </body>
 </html>
