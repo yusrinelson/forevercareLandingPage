@@ -10,10 +10,6 @@ body{
 .small-navbar{
     background-color: #BBE6E4;
     padding: 10px;
-    /* position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1; */
 }
 .small-navbar ul, .navbar ul{
     display: flex;
@@ -35,10 +31,6 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 1rem;
-    /* position: fixed;
-    top: 2.4rem;
-    width: 100%;
-    z-index: 1; */
     height: 1vh;
 }
 .navbar li{
@@ -47,6 +39,11 @@ body{
 .navbar a{
     text-decoration: none;
     color: white;
+}
+.navbar li:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    border-bottom:2px solid #BBE6E4;
 }
 .navbar button{
     color: white;
@@ -142,6 +139,21 @@ aside{
 /* SERVICES SECTION */
 .services{
     padding: 2rem;
+    position: relative;
+}
+.services .spiral1{
+    position: absolute;
+    top: -9rem;
+    right: -10rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+.services .spiral2{
+    position: absolute;
+    bottom: -9rem;
+    left: -10rem;
+    z-index: -1;
+    opacity: 0.4;
 }
 .heading-center{
     display: flex;
@@ -171,6 +183,8 @@ aside{
     height: 20vh;
 }
 .info-box .info-container:hover {
+    transition: 1s;
+    transform: scale(1.05) ;
     background-color: #42BFDD;
     p, h5, i {
         color: white;
@@ -205,13 +219,15 @@ aside{
 }
 
 /* CONTACT */
+.contact{
+    position: relative;
+}
 .contact-box{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     padding-bottom: 2rem;
     margin-top: 2rem;
 }
-
 .contact-map{
     /* background-color: #084B83; */
     display: flex;
@@ -253,4 +269,56 @@ textarea{
     border: 1px solid #42BFDD;
     font-size: 1rem;
     margin-bottom: 1rem;
+    resize: none;
+}
+.contact .spiral1{
+    position: absolute;
+    top: -9rem;
+    left: -10rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+.contact .spiral2{
+    position: absolute;
+    bottom: -9rem;
+    right: -10rem;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.new-form label{
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* FOOTER */
+footer{
+    background-color: #084B83;
+    height: 20vh;
+    display: flex;
+    color: white;
+}
+footer .footer-img{
+    width: 30vw;
+    background: url("./media/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer .footer_list-box{
+    width: 70vw;
+    background-color: #084B83;
+    padding: 1rem 5rem;
+}
+.footer_list-box h5{
+    text-align: center;
+    font-size: 1rem;
+}
+.footer_list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_list li{
+    list-style: none;
+    line-height: 1.4rem;
 }
