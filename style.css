@@ -53,6 +53,16 @@ body{
     border: none;
     margin-right: 2rem;
 }
+.mobile-button{
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+.mobile #bar{
+/* display: none; */
+}
 
 /* HERO SECTION*/
 .hero{
@@ -293,7 +303,7 @@ textarea{
 /* FOOTER */
 footer{
     background-color: #084B83;
-    height: 20vh;
+    height: 23vh;
     display: flex;
     color: white;
 }
@@ -321,4 +331,289 @@ footer .footer_list-box{
 .footer_list li{
     list-style: none;
     line-height: 1.4rem;
+}
+
+@media screen and (max-width:1024px){
+    .contact-map iframe {
+        margin-left: 5rem;
+        width: 40vw;
+        height: 55vh;
+    }
+    footer .footer_list-box {
+        width: 50vw;
+    }
+    .footer_list ul{
+        font-size: 0.8rem;
+    }
+    .footer_list li {
+        line-height: 1.2rem;
+    }
+}
+
+@media screen and (max-width:912px) {
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+    .hero article {
+        width: 40vw;
+    }
+    .hero {
+        background-attachment: fixed;
+        padding-bottom: 3rem;
+    }
+    .heading-center {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+    .heading-left {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+    }
+    .about , aside {
+        height: 39vh;
+    }
+    .info-box .info-container {
+        width: 35vw;
+        height: 15vh;
+    }
+    .contact-map iframe {
+        width: 40vw;
+        height: 40vh;
+    }
+    input {
+        width: 40vw;
+    }
+    textarea{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .mobile{
+        display: inline;
+    }
+    .navbar ul {
+        display: inline-block;
+        position: absolute;
+        padding-top: 1rem;
+        top: 6.5rem;
+        right: 0.2rem;
+        background: #084B83;
+        height: 30vh;
+        width: 30vw;
+        border-radius: 0.5rem;
+        border: 1px solid white;
+        padding: 12px;
+        line-height: 2rem;
+    }
+    .navbar li{
+        padding-left: 0;
+    }
+    .navbar button {
+        margin-right: 0;
+    }
+    .navbar button {
+        display: none;
+    }
+    .navbar li .mobile-button{
+        display: inline-block;
+    }
+    .about .about-text {
+        padding: 1.1rem;
+        padding-top: 0.7rem;
+        font-size: 0.8rem;
+    }
+    .button-style {
+        font-size: 0.75rem;
+    }
+    .heading-center {
+        font-size: 1.7rem;
+    }
+    .heading-left {
+        font-size: 1.7rem;
+    }
+    .services {
+        padding-top: 0;
+    }
+    .info-box .info-container p{
+        font-size: 0.8rem;
+    }
+    .info-box .info-container h5{
+        margin-top: 0.7rem;
+    }
+    .info-box .info-container {
+        width: 35vw;
+        height: 17vh;
+    }
+    .info-box .info-container i{
+        font-size: 1rem;
+    }
+    .contact-map iframe {
+        width: 40vw;
+        height: 50vh;
+    }
+    input {
+        width: 40vw;
+        margin: 0.5rem;
+        height: 1.2rem;
+    }
+    textarea{
+        width: 40vw;
+    }
+}
+
+
+@media screen and (max-width:426px){
+    .navbar ul {
+        top:5rem;
+    }
+    .small-navbar ul {
+        font-size: 0.6rem;
+    }
+    .small-navbar li {
+        margin: 0 1rem;
+    }
+    .navbar {
+        padding: 1.5rem 1rem;
+    }
+    .hero {
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .hero h1 {
+        font-size: 1.2rem;
+    }
+    .hero p {
+        font-size: 0.75rem;
+    }
+    .hero button {
+        padding: .5rem;
+        margin-top: 0.5rem;
+    }
+    .hero article {
+        width: 50vw;
+        margin: 0;
+    }
+    .about .about-text {
+        width: 80vw;
+    }
+    aside {
+        height: 39vh;
+        z-index: -1;
+    }
+    .heading-center {
+        font-size: 1.5rem;
+        padding: 1.5rem 0 1rem 1rem;
+
+    }
+    .heading-left {
+        font-size: 1.5rem;
+        padding: 1.5rem 0 1rem 1rem;
+    }
+    .about .heading-left{
+        padding-bottom: 0;
+    }
+    .about-text p{
+        color: black;
+    } 
+
+    .services{
+        padding: 1rem 0;
+    }
+    .info-box {
+        margin: 0rem;
+    }
+    .info-box .info-container {
+        width: 35vw;
+        height: 18vh;
+        margin: 0.2rem;
+    }
+    .info-box .info-container p{
+        font-size: 0.72rem;
+    }
+    .info-box .info-container h5{
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+        font-size: 0.8rem;
+    }
+    .info-box .info-container i{
+        font-size: 0.9rem;
+    }
+    .contact-map iframe {
+        margin-left: 1rem;
+        width: 50vw;
+        height: 47vh;
+    }
+    form {
+        padding-top: 0rem;
+    }
+    input {
+        margin: 0.2rem;
+        height: 1rem;
+    }
+    .contact-box {
+        margin-top: 0;
+    }
+
+    footer .footer_list-box {
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+    .footer_list ul{
+        font-size: 0.8rem;
+        padding: 0;
+    }
+    .footer_list li {
+        line-height: 1.2rem;
+    }
+    footer .footer-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:375px){
+    .small-navbar li {
+        margin: 0 0.5rem;
+    }
+    .navbar li{
+        padding: 0;
+    }
+    .contact-box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contact-box form{
+        margin-bottom: 1rem;
+    }
+    input {
+        width: 70vw;
+    }
+    textarea{
+        width: 70vw;
+    }
+    .contact-box iframe{
+        width: 100vw;
+        margin: 0;
+    }
+
+}
+@media screen and (max-width:320px){
+    .small-navbar li {
+        margin: 0.1;
+    }
+    .navbar li {
+        margin: 0;
+        padding-left: 0;
+    }
+    .navbar ul {
+        top: 5.2rem;
+        width: 40vw;
+    }
+    .about .about-text {
+        padding: 1.1rem;
+        padding-top: 0.7rem;
+        font-size: 0.7rem;
+    }
+
 }
