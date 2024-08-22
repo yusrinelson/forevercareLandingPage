@@ -4,6 +4,8 @@
 }
 body{
     font-family:Arial, Helvetica, sans-serif;
+    /* background: linear-gradient(to top, white, #42BFDD 50%); */
+    /* background-color: #508692; */
 }
 
 /* HEADER */
@@ -25,7 +27,8 @@ body{
 }
 
 .navbar{
-    background-color: #084B83;
+    /* background-color: #084B83; */
+    background:#327f92;
     color: white;
     display: flex;
     align-items: center;
@@ -34,16 +37,26 @@ body{
     height: 1vh;
 }
 .navbar li{
-    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+    padding: 0.5rem; 
 }
+
+.navbar li:nth-child(-n+5){
+    background: linear-gradient(to left, #327f92 50%, #BBE6E4 50%) right;
+    background-size: 220%;
+    transition: .5s ease-out;
+    /* border: 1px solid #42BFDD; */
+}
+
 .navbar a{
     text-decoration: none;
     color: white;
 }
 .navbar li:hover{
-    transform: scale(1.05);
-    transition: 1s;
-    border-bottom:2px solid #BBE6E4;
+    /* background: #42BFDD; */
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    background-position: left;
 }
 .navbar button{
     color: white;
@@ -56,12 +69,17 @@ body{
 .mobile-button{
     display: none;
 }
-
 .mobile {
     display: none;
 }
-.mobile #bar{
-/* display: none; */
+.user-box i{
+    background: #BBE6E4;
+    padding: 0.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.user-box button{
+    cursor: pointer;
 }
 
 /* HERO SECTION*/
@@ -70,7 +88,8 @@ body{
     background-attachment: fixed;
     padding: 2rem;
     padding-bottom: 5rem;
-    /* margin-top: 6rem; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero article{
@@ -110,18 +129,40 @@ body{
     /* background-color: #BBE6E4 ; */
     background-image: linear-gradient(to right,#BBE6E4, #EAEFF2) ;
     height: 50vh;
+    border-top:  2px solid #327f92;
 }
 aside{
     height: 50vh;
-    background-color: #084B83;
+    background-color: #2c6979;
     background: url("./media/about-img2.jpg");
     background-position: center;
     background-size: cover;
     opacity: 0.8;
+    border-top:  2px solid #327f92;
+
 }
 .heading-left{
-    font-size: 2.2rem;
-    padding: 2rem 0rem 0rem 2rem;
+    margin-left:1rem ;
+    background: #327f92;
+    width: fit-content;
+    color: white;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;
+}
+.heading-left div{
+    background-color: #327f92;
+    padding: 0.5rem 0.7rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.heading-left h1{
+    font-size: 1.7rem;
+    color: white;
+}
+.heading-left h6{
+    font-size: 0.8rem;
+    color: #d8d6d6;
 }
 .about .about-text{
     padding: 1.5rem;
@@ -148,8 +189,10 @@ aside{
 
 /* SERVICES SECTION */
 .services{
-    padding: 2rem;
+    padding-bottom: 2rem;
     position: relative;
+    /* background: linear-gradient(to bottom , white, #BBE6E4 50%); */
+    border-top: 2px solid #327f92;
 }
 .services .spiral1{
     position: absolute;
@@ -169,9 +212,25 @@ aside{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.2rem;
-    padding-top: 2rem;
+    flex-direction: column;
+    margin-bottom: 3rem;
 }
+.heading-center div{
+    background-color: #327f92;
+    padding: 0.5rem 0.7rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.heading-center h1{
+    font-size: 2.2rem;
+    color: white;
+}
+.heading-center h6{
+    font-size: 0.8rem;
+    color: #d8d6d6;
+}
+
 .info-box{
     display: flex;
     align-items: center;
@@ -186,6 +245,7 @@ aside{
     text-align: center;
     margin: 0.5rem;
     border: 1px solid #BBE6E4;
+    /* border-left: 2PX solid #42BFDD; */
     height: 5rem;
     padding: 1rem;
     border-radius: 5px;
@@ -196,6 +256,7 @@ aside{
     transition: 1s;
     transform: scale(1.05) ;
     background-color: #42BFDD;
+    border-left: 3px solid #327f92;
     p, h5, i {
         color: white;
     }
@@ -215,14 +276,17 @@ aside{
 /* DEPARTMENTS */
 .departments{
     background-color: #BBE6E4;
-    background-attachment: fixed;
+    /* background: linear-gradient(to top , white, #BBE6E4 50%); */
+    /* background-attachment: fixed; */
     padding-bottom: 2rem;
+    border-top: 2px solid #327f92;
 }
 .departments h5, .departments i{
-    color: #084B83;
+    color: #327f92;
 }
 .departments .info-container{
-    border: 1px solid #42BFDD;
+    border: 1px solid white;
+    /* border-left: 2PX solid #084B83; */
 }
 .departments .info-container:hover{
     background-color: #42BFDD;
@@ -231,12 +295,14 @@ aside{
 /* CONTACT */
 .contact{
     position: relative;
+    background: #BBE6E4;
+    /* background: linear-gradient(to bottom , white, #BBE6E4 50%); */
+    border-top: 2px solid #327f92;
 }
 .contact-box{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    padding-bottom: 2rem;
-    margin-top: 2rem;
+    padding: 2rem 0;
 }
 .contact-map{
     /* background-color: #084B83; */
@@ -302,7 +368,7 @@ textarea{
 }
 /* FOOTER */
 footer{
-    background-color: #084B83;
+    /* background-color: #084B83; */
     height: 23vh;
     display: flex;
     color: white;
@@ -313,10 +379,22 @@ footer .footer-img{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+footer .footer-img h5{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #2c2c2c;
+    border-radius: 5px;
 }
 footer .footer_list-box{
     width: 70vw;
-    background-color: #084B83;
+    background-color: #327f92;
+    /* background: linear-gradient(to top, #327f92 , #084B83 50% ); */
+
     padding: 1rem 5rem;
 }
 .footer_list-box h5{
@@ -366,11 +444,18 @@ footer .footer_list-box{
         padding-top: 1.5rem;
     }
     .heading-left {
-        font-size: 2rem;
+        font-size: 1rem;
         padding-top: 1.5rem;
     }
+    .about .about-text {
+        width: 70vw;
+    }
+    aside {
+        height: 40vh;
+        z-index: -1;
+    }
     .about , aside {
-        height: 39vh;
+        height: 40vh;
     }
     .info-box .info-container {
         width: 35vw;
@@ -389,6 +474,9 @@ footer .footer_list-box{
 }
 
 @media screen and (max-width:768px){
+    .small-navbar ul, .navbar ul {
+        font-size: 0.7rem;
+    }
     .mobile{
         display: inline;
     }
@@ -398,13 +486,13 @@ footer .footer_list-box{
         padding-top: 1rem;
         top: 6.5rem;
         right: 0.2rem;
-        background: #084B83;
-        height: 30vh;
+        background: #327f92;
+        height: 40vh;
         width: 30vw;
         border-radius: 0.5rem;
         border: 1px solid white;
         padding: 12px;
-        line-height: 2rem;
+        line-height: 1.5rem;
     }
     .navbar li{
         padding-left: 0;
@@ -418,6 +506,11 @@ footer .footer_list-box{
     .navbar li .mobile-button{
         display: inline-block;
     }
+    .hero article {
+        width: 40vw;
+        margin-left: 0;
+    }
+    
     .about .about-text {
         padding: 1.1rem;
         padding-top: 0.7rem;
@@ -430,7 +523,7 @@ footer .footer_list-box{
         font-size: 1.7rem;
     }
     .heading-left {
-        font-size: 1.7rem;
+        font-size: 0.9rem;
     }
     .services {
         padding-top: 0;
@@ -463,9 +556,10 @@ footer .footer_list-box{
 }
 
 
-@media screen and (max-width:426px){
+@media screen and (max-width:470px){
     .navbar ul {
         top:5rem;
+        height: 40vh;
     }
     .small-navbar ul {
         font-size: 0.6rem;
@@ -499,20 +593,16 @@ footer .footer_list-box{
         width: 80vw;
     }
     aside {
-        height: 39vh;
-        z-index: -1;
+        height: 40vh;
+
     }
     .heading-center {
         font-size: 1.5rem;
         padding: 1.5rem 0 1rem 1rem;
 
     }
-    .heading-left {
-        font-size: 1.5rem;
-        padding: 1.5rem 0 1rem 1rem;
-    }
     .about .heading-left{
-        padding-bottom: 0;
+        font-size: 0.7rem;
     }
     .about-text p{
         color: black;
@@ -574,10 +664,12 @@ footer .footer_list-box{
 
 @media screen and (max-width:375px){
     .small-navbar li {
-        margin: 0 0.5rem;
+        margin: 0 0.4rem;
     }
     .navbar li{
         padding: 0;
+        line-height: 2rem;
+        margin: 0;
     }
     .contact-box {
         display: flex;
@@ -615,5 +707,13 @@ footer .footer_list-box{
         padding-top: 0.7rem;
         font-size: 0.7rem;
     }
-
+    .heading-center{
+        font-size: 1rem;
+    }
+    .heading-left{
+        font-size: 1rem;
+    }
+    .about ,.about-container aside{
+        height: 45vh;
+    }
 }
